@@ -7,8 +7,6 @@
   align-items: center;
   border-radius: 0;
   padding: 1rem;
-  transition: all 20ms cubic-bezier(.17,.67,.58,.29);
-
   &:hover,:active {
     padding: 2rem;
   }

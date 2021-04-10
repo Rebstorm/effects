@@ -11,10 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="112d3882-a653-4b9e-a144-023962ef3082" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/effectsModule/components/roundButton/RoundButton.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/effectsModule/components/roundButton/RoundButton.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/effectsModule/components/roundButton/RoundButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/effectsModule/components/roundButton/RoundButton.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <workItem from="1616416308571" duration="719000" />
       <workItem from="1616417068792" duration="194000" />
       <workItem from="1616417274061" duration="3083000" />
-      <workItem from="1618059560993" duration="4224000" />
+      <workItem from="1618059560993" duration="5417000" />
     </task>
     <servers />
   </component>
