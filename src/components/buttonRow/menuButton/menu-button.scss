@@ -5,9 +5,11 @@
   bottom: 0;
   display: inline-flex;
   align-items: center;
-  border-radius: 0;
   padding: 1rem;
+  transition: all 50ms cubic-bezier(.17,.67,.83,.67);
+
   &:hover,:active {
-    padding: 2rem;
+    border-radius: 2rem 0 0 0;
   }
 }
+
