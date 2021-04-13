@@ -3,10 +3,22 @@
   position: absolute;
   bottom: 0;
 
-  display: inline-flex;
-  align-items: center;
-  transition: all 50ms cubic-bezier(.17,.67,.83,.67);
-
   &:hover,:active {
   }
+
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    .text {
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+    }
+  }
+
+
 }

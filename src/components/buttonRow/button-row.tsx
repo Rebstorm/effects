@@ -29,9 +29,10 @@ export const ButtonRow: FunctionComponent<TitleProps> = (props) => {
   );
   return (
     <>
-      {buttonArray.map((item) => (
+      {buttonArray.map((item, key, prop) => (
         <MenuButton
           id={item.id}
+          key={key}
           color={item.color}
           sizeInPercent={item.sizeInPercent}
           zIndex={item.zIndex}

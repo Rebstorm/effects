@@ -1,14 +1,13 @@
-import "./about.scss";
 import { animated, useSpring } from "react-spring";
 
-export function About() {
+export function Tech() {
   const props = useSpring({
     from: {
       left: "0%",
       bottom: "100%",
       width: "100%",
       height: "100vh",
-      background: "#2EC9E6",
+      background: "#4D806B",
     },
     to: async (next) => {
       await next({
@@ -23,8 +22,7 @@ export function About() {
 
   return (
     <animated.div className={"about"} style={props}>
-      {" "}
-      about{" "}
+      tech
     </animated.div>
   );
 }
