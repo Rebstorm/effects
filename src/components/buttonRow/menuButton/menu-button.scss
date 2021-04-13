@@ -1,15 +1,12 @@
 
-.round {
+.container {
   position: absolute;
-  right: 0;
   bottom: 0;
+
   display: inline-flex;
   align-items: center;
-  padding: 1rem;
   transition: all 50ms cubic-bezier(.17,.67,.83,.67);
 
   &:hover,:active {
-    border-radius: 2rem 0 0 0;
   }
 }
-

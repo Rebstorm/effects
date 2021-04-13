@@ -21,9 +21,9 @@ export const MenuButton: FunctionComponent<MenuButtonProps> = (prop) => {
 
   const [clicked, set] = useState(false);
   const animProps = useSpring({
-    width: clicked ? "100%" : `${prop.sizeInPercent}%`,
     height: clicked ? "100vh" : `${prop.sizeInPercent}%`,
     zIndex: clicked ? 200 : prop.zIndex,
+
     immediate: (key) => key === "zIndex",
   });
   return (
@@ -40,14 +40,14 @@ export const MenuButton: FunctionComponent<MenuButtonProps> = (prop) => {
         set(true);
       }}
       onMouseUp={() => window.setTimeout(() => set(false), 300)}
-      className={"round"}
+      className={"container"}
       style={{
         backgroundColor: prop.color,
-        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E"`,
+        width: "100%",
         ...animProps,
       }}
     >
-      {prop.id}
+      <animated.div>{prop.id}</animated.div>
     </animated.div>
   );
 };
