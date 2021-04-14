@@ -9,29 +9,33 @@ interface TitleProps {
 export const ButtonRow: FunctionComponent<TitleProps> = (props) => {
   const buttonArray: MenuButtonProps[] = Array.of(
     {
-      id: "about",
+      cssKey: "one",
+      title: "about",
       zIndex: 2,
-      color: "#2EC9E6",
+      color: "#6CA6BD",
       sizeInPercent: 30,
     },
     {
-      id: "tech",
+      cssKey: "two",
+      title: "tech",
       zIndex: 1,
-      color: "#4D806B",
-      sizeInPercent: 60,
+      color: "#626C70",
+      sizeInPercent: 50,
     },
     {
-      id: "copyright",
+      cssKey: "three",
+      title: "copyright",
       zIndex: 0,
-      color: "#FA5950",
-      sizeInPercent: 90,
+      color: "#D3E9F2",
+      sizeInPercent: 70,
     }
   );
   return (
     <>
       {buttonArray.map((item, key, prop) => (
         <MenuButton
-          id={item.id}
+          cssKey={item.cssKey}
+          title={item.title}
           key={key}
           color={item.color}
           sizeInPercent={item.sizeInPercent}

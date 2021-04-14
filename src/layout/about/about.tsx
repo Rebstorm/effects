@@ -23,8 +23,7 @@ export function About() {
 
   return (
     <animated.div className={"about"} style={props}>
-      {" "}
-      about{" "}
+      about
     </animated.div>
   );
 }
