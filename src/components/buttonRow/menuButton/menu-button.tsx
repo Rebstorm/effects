@@ -30,7 +30,7 @@ export const MenuButton: FunctionComponent<MenuButtonProps> = (prop) => {
       onClick={(e) => {
         // Router Change
         setTimeout(() => {
-          history.push(`/${prop.title}`);
+          history.push(`${process.env.PUBLIC_URL}/${prop.title}`);
         }, 250);
       }}
       onMouseDown={() => {

@@ -8,14 +8,14 @@ import { Tech } from "./layout/tech/tech";
 function App() {
   return (
     <React.StrictMode>
-      <BrowserRouter>
-        <Route exact path="/">
+      <BrowserRouter basename={"/docs"}>
+        <Route exact path={`${process.env.PUBLIC_URL}/`}>
           <Home></Home>
         </Route>
-        <Route exact path="/tech">
+        <Route exact path={`${process.env.PUBLIC_URL}/tech`}>
           <Tech></Tech>
         </Route>
-        <Route exact path="/about">
+        <Route exact path={`${process.env.PUBLIC_URL}/about`}>
           <About></About>
         </Route>
       </BrowserRouter>
