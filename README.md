@@ -1,6 +1,8 @@
 # Paper Boats
 
-My paper boat site, still no use for it. Link can be found here: 
+![alt](effect.gif)
+
+My paper boat site, still no use for it. Link can be found [here](https://rebstorm.github.io/effects/). 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
