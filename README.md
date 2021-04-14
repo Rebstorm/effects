@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Paper Boats
+
+My paper boat site, still no use for it. Link can be found here: 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
