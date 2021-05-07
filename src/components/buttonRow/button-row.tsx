@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import "./button-row.scss";
-import { MenuButton, MenuButtonProps } from "./menuButton/menu-button";
+import { MenuButton, MenuButtonProps } from "../menuButton/menu-button";
 
 interface TitleProps {
   title: string;
@@ -9,24 +9,21 @@ interface TitleProps {
 export const ButtonRow: FunctionComponent<TitleProps> = (props) => {
   const buttonArray: MenuButtonProps[] = Array.of(
     {
-      cssKey: "one",
       title: "about",
       zIndex: 2,
-      color: "#6CA6BD",
+      color: "#38706C",
       sizeInPercent: 30,
     },
     {
-      cssKey: "two",
       title: "tech",
       zIndex: 1,
-      color: "#626C70",
+      color: "#78F0E6",
       sizeInPercent: 50,
     },
     {
-      cssKey: "three",
       title: "copyright",
       zIndex: 0,
-      color: "#D3E9F2",
+      color: "#7EFCF2",
       sizeInPercent: 70,
     }
   );
@@ -34,7 +31,6 @@ export const ButtonRow: FunctionComponent<TitleProps> = (props) => {
     <>
       {buttonArray.map((item, key, prop) => (
         <MenuButton
-          cssKey={item.cssKey}
           title={item.title}
           key={key}
           color={item.color}

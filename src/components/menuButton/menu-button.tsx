@@ -5,7 +5,6 @@ import { useHistory } from "react-router-dom";
 
 export interface MenuButtonProps {
   title: string;
-  cssKey: string;
   color: string;
   sizeInPercent: number;
   zIndex?: number;
@@ -53,7 +52,7 @@ export const MenuButton: FunctionComponent<MenuButtonProps> = (prop) => {
         <div
           className={"text"}
           style={{
-            height: "90%",
+            height: "100%",
             backgroundColor: prop.color,
           }}
         >
