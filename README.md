@@ -1,4 +1,4 @@
-# Paper Boats
+# Effects
 
 ![alt](effect.gif)
 

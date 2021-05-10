@@ -1,5 +1,5 @@
-import { ButtonRow } from "../../components/buttonRow/button-row";
 import React from "react";
+import { ButtonRow } from "../../components/buttonRow/button-row";
 
 export function Home() {
   return (

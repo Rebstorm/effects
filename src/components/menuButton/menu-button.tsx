@@ -12,6 +12,7 @@ export interface MenuButtonProps {
 
 export const MenuButton: FunctionComponent<MenuButtonProps> = (prop) => {
   const history = useHistory();
+
   useEffect(() => {
     // mount
     return () => {
@@ -19,10 +20,13 @@ export const MenuButton: FunctionComponent<MenuButtonProps> = (prop) => {
     };
   });
 
-  const [clicked, set] = useState(false);
-  const animProps = useSpring({
+  const [clicked, setClicked] = useState(false);
+  const [zoomedIn, setZoomedIn] = useState(1);
+
+  const allProps = useSpring({
     height: clicked ? "100vh" : `${prop.sizeInPercent}%`,
     zIndex: clicked ? 200 : prop.zIndex,
+    transform: `scale(${zoomedIn})`
   });
   return (
     <animated.div
@@ -33,13 +37,15 @@ export const MenuButton: FunctionComponent<MenuButtonProps> = (prop) => {
         }, 250);
       }}
       onMouseDown={() => {
-        set(true);
+        setClicked(true);
       }}
-      onMouseUp={() => window.setTimeout(() => set(false), 300)}
+      onMouseOver={(e) => setZoomedIn(1.3)}
+      onMouseLeave={(e) => setZoomedIn(1)}
+      onMouseUp={() => window.setTimeout(() => setClicked(false), 300)}
       className={"container"}
       style={{
         width: "100%",
-        ...animProps,
+        ...allProps,
       }}
     >
       <div
